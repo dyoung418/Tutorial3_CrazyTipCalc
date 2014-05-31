@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tutorial3 CrazyTipCalc</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="bill_text_view">Bill</string>
+    <string name="bill_edit_text">0.0</string>
+
+    <string name="tip_text_view">Tip</string>
+    <string name="tip_edit_text">.15</string>
+
+    <string name="final_text_view">Final Bill</string>
+    <string name="final_bill_edit_text">.15</string>
+
+    <string name="change_tip_text_view">Tip</string>
+
+    <string name="ten_text_view">10%: </string>
+    <string name="fifteen_text_view">15%: </string>
+    <string name="eighteen_text_view">18%: </string>
+    <string name="twenty_text_view">20%: </string>
+    <string name="twentyfive_text_view">25%: </string>
+
+</resources>

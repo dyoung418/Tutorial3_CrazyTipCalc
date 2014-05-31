@@ -1,0 +1,184 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.youngshome.tutorial3crazytipcalc.crazytipcalc.CrazyTipCalc">
+
+
+    <TextView
+        android:id="@+id/billTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_text_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/billEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/billTextView"
+        android:layout_alignBaseline="@+id/billTextView"
+        android:ems="5"
+        android:text="@string/bill_edit_text"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_text_view"
+        android:id="@+id/tipTextView"
+        android:layout_alignTop="@+id/billTextView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipEditText"
+        android:layout_alignTop="@+id/billEditText"
+        android:layout_toRightOf="@+id/tipTextView"
+        android:layout_below="@+id/billEditText"
+        android:layout_alignBaseline="@+id/billEditText"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:text="@string/tip_edit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_tip_text_view"
+        android:id="@+id/changedTipTextView"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@id/billTextView" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipSeekBar"
+        android:progress="15"
+        android:layout_below="@id/changedTipTextView"
+        android:layout_toRightOf="@id/changedTipTextView"
+        android:layout_alignTop="@id/changedTipTextView"
+        android:layout_alignRight="@id/tipEditText"
+        android:layout_alignEnd="@id/tipEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/final_text_view"
+        android:id="@+id/finalBillTextView"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tipSeekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="5"
+        android:id="@+id/finalBilleditText"
+        android:layout_alignBottom="@id/finalBillTextView"
+        android:layout_toRightOf="@id/finalBillTextView"
+        android:layout_alignBaseline="@id/finalBillTextView"
+        android:text="@string/final_bill_edit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ten_text_view"
+        android:id="@+id/tenTextView"
+        android:layout_below="@id/finalBilleditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tenResultTextView"
+        android:layout_alignBottom="@id/tenTextView"
+        android:layout_toRightOf="@id/tenTextView"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fifteen_text_view"
+        android:id="@+id/fifteenTextView"
+        android:layout_below="@id/tenTextView"
+        android:layout_alignLeft="@id/tenTextView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/fifteenResultTextView"
+        android:layout_toRightOf="@id/fifteenTextView"
+        android:layout_alignBottom="@id/fifteenTextView"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/eighteen_text_view"
+        android:id="@+id/eighteenTextView"
+        android:layout_below="@id/fifteenTextView"
+        android:layout_alignLeft="@id/fifteenTextView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/eighteenResultTextView"
+        android:layout_toRightOf="@id/eighteenTextView"
+        android:layout_alignBottom="@id/eighteenTextView"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twenty_text_view"
+        android:id="@+id/twentyTextView"
+        android:layout_below="@id/eighteenTextView"
+        android:layout_alignLeft="@id/eighteenTextView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/twentyResultTextView"
+        android:layout_toRightOf="@id/twentyTextView"
+        android:layout_alignBottom="@id/twentyTextView"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/twentyfive_text_view"
+        android:id="@+id/twentyFiveTextView"
+        android:layout_below="@id/twentyTextView"
+        android:layout_alignLeft="@id/twentyTextView"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/twentyFiveResultTextView"
+        android:layout_toRightOf="@id/twentyFiveTextView"
+        android:layout_alignBottom="@id/twentyFiveTextView"
+        android:layout_marginLeft="20dp" />
+</RelativeLayout>
